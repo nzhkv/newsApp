@@ -1,11 +1,11 @@
 import Foundation
 
-struct News {
+struct News: Decodable {
     let totalResults: Int
     let articles: [Article]
 }
 
-struct Article {
+struct Article: Decodable {
     let author: String?
     let title: String
     let description: String

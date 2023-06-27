@@ -8,15 +8,27 @@
 import UIKit
 
 class MainTableViewController: UITableViewController {
+    
+    private var news: [News] = []
+    private var networkManager = NetworkManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        fetchNews()
+    }
+    
+    private func fetchNews() {
+        networkManager.fetchNews { [weak self] (news) in
+            DispatchQueue.main.async {
+                if let news = news {
+                    self?.news = news
+                    self?.tableView.reloadData()
+                } else {
+                    print("some error")
+                }
+            }
+        }
     }
 
     // MARK: - Table view data source
