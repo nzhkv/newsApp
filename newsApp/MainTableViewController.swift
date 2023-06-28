@@ -43,12 +43,24 @@ class MainTableViewController: UITableViewController {
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "NewsCell", for: indexPath)
         let currentNews = news.articles[indexPath.row]
         var content = cell.defaultContentConfiguration()
         content.text = currentNews.title
         cell.contentConfiguration = content
+//        cell.viewController = self
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let news = news.articles[indexPath.row]
+        
+        // Создаем экземпляр NewsDetailViewController
+        let detailViewController = NewsDetailViewController()
+        detailViewController.newsDescription = news.description
+        
+        // Отображаем контроллер с полным описанием новости
+        navigationController?.pushViewController(detailViewController, animated: true)
     }
 
 
