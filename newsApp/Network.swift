@@ -8,7 +8,7 @@
 import Foundation
 
 class NetworkManager {
-    func fetchNews(completion: @escaping ([News]?) -> Void) {
+    func fetchNews(completion: @escaping (News?) -> Void) {
         guard let url = URL(string: "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=7583e2f26bf04020a773632b59fa8b81") else {
             completion(nil)
             return
@@ -21,16 +21,18 @@ class NetworkManager {
                 return
             }
             
+            
             guard let data = data else {
                 completion(nil)
                 return
             }
             
             do {
-                let news = try JSONDecoder().decode([News].self, from: data)
+                let news = try JSONDecoder().decode(News.self, from: data)
+                print(news.articles[2].content!)
                 completion(news)
             } catch {
-                print("ошибка при декодировании")
+                print("ошибка при декодировании \(error.localizedDescription)")
                 completion(nil)
             }
         }.resume()

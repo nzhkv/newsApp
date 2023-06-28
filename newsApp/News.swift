@@ -7,9 +7,9 @@ struct News: Decodable {
 
 struct Article: Decodable {
     let author: String?
-    let title: String
-    let description: String
+    let title: String?
+    let description: String?
     let urlToImage: String?
-    let publishedAt: String
-    let content: String
+    let publishedAt: String?
+    let content: String?
 }
