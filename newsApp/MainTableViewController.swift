@@ -22,7 +22,7 @@ class MainTableViewController: UITableViewController {
         networkManager.fetchNews { [weak self] (news) in
             DispatchQueue.main.async {
                 if let news = news {
-                    self?.news = news
+//                    self?.news = news
                     self?.tableView.reloadData()
                 } else {
                     print("some error")
