@@ -60,7 +60,7 @@ class MainTableViewController: UITableViewController {
         detailViewController.newsDescription = news.description
         
         // Отображаем контроллер с полным описанием новости
-//        navigationController?.pushViewController(detailViewController, animated: true)
+        navigationController?.pushViewController(detailViewController, animated: true)
     }
 
 
