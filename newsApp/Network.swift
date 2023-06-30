@@ -29,7 +29,6 @@ class NetworkManager {
             
             do {
                 let news = try JSONDecoder().decode(News.self, from: data)
-                print(news.articles[2].content!)
                 completion(news)
             } catch {
                 print("ошибка при декодировании \(error.localizedDescription)")
