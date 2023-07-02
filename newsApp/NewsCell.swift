@@ -8,8 +8,6 @@
 import UIKit
 
 class NewsCell: UITableViewCell {
-//    weak var viewController: MainTableViewController?
-    
     @IBOutlet weak var news: UILabel!
     @IBOutlet weak var sourse: UILabel!
 

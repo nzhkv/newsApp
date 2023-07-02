@@ -45,10 +45,13 @@ class MainTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NewsCell", for: indexPath)
         let currentNews = news.articles[indexPath.row]
+        print(currentNews)
+        
         var content = cell.defaultContentConfiguration()
         content.text = currentNews.title
+        content.secondaryText = currentNews.author
         cell.contentConfiguration = content
-//        cell.viewController = self
+        
         return cell
     }
     
