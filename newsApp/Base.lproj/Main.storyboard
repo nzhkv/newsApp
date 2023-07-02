@@ -17,14 +17,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsCell" id="qEL-Dy-WX9">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsCell" id="qEL-Dy-WX9" customClass="NewsCell" customModule="newsApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qEL-Dy-WX9" id="reL-hX-63o">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ds-IG-yZo">
+                                            <rect key="frame" x="16" y="4" width="361" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sourse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="if0-hE-gGp">
+                                            <rect key="frame" x="16" y="22" width="361" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="if0-hE-gGp" firstAttribute="top" secondItem="reL-hX-63o" secondAttribute="top" constant="22" id="oMw-O0-dJX"/>
+                                        <constraint firstItem="1ds-IG-yZo" firstAttribute="top" secondItem="reL-hX-63o" secondAttribute="top" constant="4" id="v1D-BA-8dY"/>
+                                        <constraint firstItem="1ds-IG-yZo" firstAttribute="leading" secondItem="reL-hX-63o" secondAttribute="leading" constant="16" id="vnX-gB-5kN"/>
+                                        <constraint firstAttribute="trailing" secondItem="if0-hE-gGp" secondAttribute="trailing" constant="16" id="wXF-qi-f06"/>
+                                        <constraint firstItem="if0-hE-gGp" firstAttribute="leading" secondItem="reL-hX-63o" secondAttribute="leading" constant="16" id="xO3-0d-X8b"/>
+                                        <constraint firstAttribute="trailing" secondItem="1ds-IG-yZo" secondAttribute="trailing" constant="16" id="zCZ-6A-zSL"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="news" destination="1ds-IG-yZo" id="F76-vR-Ne8"/>
+                                    <outlet property="sourse" destination="if0-hE-gGp" id="9u1-64-WeZ"/>
                                     <segue destination="Ltz-Rd-vMk" kind="show" trigger="accessoryAction" id="wFD-mX-LCf"/>
                                 </connections>
                             </tableViewCell>
@@ -54,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wDN-9s-CLT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2114" y="8"/>
+            <point key="canvasLocation" x="1758" y="3"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hQS-T1-rjk">

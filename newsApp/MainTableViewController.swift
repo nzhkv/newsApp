@@ -52,16 +52,16 @@ class MainTableViewController: UITableViewController {
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let news = news.articles[indexPath.row]
-        
-        // Создаем экземпляр NewsDetailViewController
-        let detailViewController = NewsDetailViewController()
-        detailViewController.newsDescription = news.description
-        
-        // Отображаем контроллер с полным описанием новости
-        navigationController?.pushViewController(detailViewController, animated: true)
-    }
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let news = news.articles[indexPath.row]
+//
+//        // Создаем экземпляр NewsDetailViewController
+//        let detailViewController = NewsDetailViewController()
+//        detailViewController.newsDescription = news.description
+//
+//        // Отображаем контроллер с полным описанием новости
+//        navigationController?.pushViewController(detailViewController, animated: true)
+//    }
 
 
     /*

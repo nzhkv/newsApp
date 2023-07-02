@@ -8,11 +8,11 @@
 import UIKit
 
 class NewsCell: UITableViewCell {
-    weak var viewController: MainTableViewController?
+//    weak var viewController: MainTableViewController?
     
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
-    // Другие элементы интерфейса, если необходимо
+    @IBOutlet weak var news: UILabel!
+    @IBOutlet weak var sourse: UILabel!
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
