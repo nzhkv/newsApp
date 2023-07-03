@@ -10,7 +10,7 @@ import UIKit
 class NewsCell: UITableViewCell {
     @IBOutlet weak var news: UILabel!
     @IBOutlet weak var sourse: UILabel!
-
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
