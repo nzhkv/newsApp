@@ -62,11 +62,13 @@ class MainTableViewController: UITableViewController {
         let news = news.articles[indexPath.row]
 
         // Создаем экземпляр NewsDetailViewController
-        let detailViewController = NewsDetailViewController()
-        detailViewController.newsDescription = news.description
+//        let detailViewController = NewsDetailViewController()
+//        detailViewController.newsDescription = news
+//        detailViewController.newsDescription = "222222"
 
         // Отображаем контроллер с полным описанием новости
-        navigationController?.pushViewController(detailViewController, animated: true)
+//        navigationController?.pushViewController(detailViewController, animated: true)
+//        performSegue(withIdentifier: "example", sender: nil)
     }
 
 

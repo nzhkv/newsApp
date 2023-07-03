@@ -11,9 +11,11 @@ class NewsDetailViewController: UIViewController {
     
     var newsDescription: String?
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .blue
+        print(newsDescription)
         
 
     }
