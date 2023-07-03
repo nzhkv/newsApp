@@ -61,7 +61,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ifL-X2-tiu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="972" y="3"/>
+            <point key="canvasLocation" x="866" y="3"/>
         </scene>
         <!--News Detail View Controller-->
         <scene sceneID="dIa-UI-6EG">
@@ -75,7 +75,7 @@
                                 <rect key="frame" x="175.66666666666666" y="415.66666666666669" width="42" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="5dr-Yt-1qR"/>
-                                    <constraint firstAttribute="width" constant="42" id="OeY-DN-UKi"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="OeY-DN-UKi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -92,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dyB-f2-xQu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1845" y="17"/>
+            <point key="canvasLocation" x="1642" y="3"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hQS-T1-rjk">
