@@ -49,6 +49,7 @@
                                 <connections>
                                     <outlet property="news" destination="1ds-IG-yZo" id="F76-vR-Ne8"/>
                                     <outlet property="sourse" destination="GbE-Hh-kWL" id="Qm5-06-6lj"/>
+                                    <segue destination="tSm-qK-iHC" kind="show" identifier="example" id="ENv-er-mKD"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -71,12 +72,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEu-P9-AZo">
-                                <rect key="frame" x="175.66666666666666" y="415.66666666666669" width="42" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="5dr-Yt-1qR"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="OeY-DN-UKi"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aI-i7-mts">
+                                <rect key="frame" x="175.66666666666666" y="450" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -85,10 +82,11 @@
                         <viewLayoutGuide key="safeArea" id="1Zd-Yh-Wok"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="DEu-P9-AZo" firstAttribute="centerX" secondItem="lq0-K2-1gC" secondAttribute="centerX" id="N3a-yK-xoZ"/>
-                            <constraint firstItem="DEu-P9-AZo" firstAttribute="centerY" secondItem="lq0-K2-1gC" secondAttribute="centerY" id="fzR-Ng-5uF"/>
+                            <constraint firstItem="8aI-i7-mts" firstAttribute="centerY" secondItem="1Zd-Yh-Wok" secondAttribute="centerY" id="W8K-ji-Tx3"/>
+                            <constraint firstItem="8aI-i7-mts" firstAttribute="centerX" secondItem="1Zd-Yh-Wok" secondAttribute="centerX" id="cOs-UG-smd"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Vas-X5-K0R"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dyB-f2-xQu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
