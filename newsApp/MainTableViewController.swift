@@ -67,7 +67,7 @@ class MainTableViewController: UITableViewController {
 //        detailViewController.newsDescription = "222222"
 
         // Отображаем контроллер с полным описанием новости
-//        navigationController?.pushViewController(detailViewController, animated: true)
+        navigationController?.pushViewController(detailViewController, animated: true)
 //        performSegue(withIdentifier: "example", sender: nil)
     }
 
