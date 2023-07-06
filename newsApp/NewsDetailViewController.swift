@@ -11,13 +11,16 @@ class NewsDetailViewController: UIViewController {
     
     var newsDescription: String?
 
+    @IBOutlet weak var label: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print(newsDescription)
         
-
+//        if newsDescription != nil {
+//            label.text = newsDescription
+//        }
     }
 
 
