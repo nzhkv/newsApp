@@ -66,7 +66,7 @@
         <!--News Detail View Controller-->
         <scene sceneID="dIa-UI-6EG">
             <objects>
-                <viewController id="tSm-qK-iHC" customClass="NewsDetailViewController" customModule="newsApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewsDetailVC" id="tSm-qK-iHC" customClass="NewsDetailViewController" customModule="newsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lq0-K2-1gC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
