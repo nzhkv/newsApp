@@ -61,14 +61,16 @@ class MainTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let news = news.articles[indexPath.row]
 
-        // Создаем экземпляр NewsDetailViewController
-        let detailViewController = NewsDetailViewController()
-//        detailViewController.newsDescription = news
-        detailViewController.newsDescription = "222222"
 
-        // Отображаем контроллер с полным описанием новости
-        navigationController?.pushViewController(detailViewController, animated: true)
-//        performSegue(withIdentifier: "example", sender: nil)
+//        let detailViewController = NewsDetailViewController()
+//        detailViewController.newsDescription = news.content
+
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let editScreen = storyBoard.instantiateViewController(withIdentifier: "NewsDetailVC") as! NewsDetailViewController
+        editScreen.newsDescription = news.content ?? " "
+        
+        navigationController?.pushViewController(editScreen, animated: true)
+
     }
 
 

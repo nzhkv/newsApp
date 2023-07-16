@@ -9,18 +9,22 @@ import UIKit
 
 class NewsDetailViewController: UIViewController {
     
-    var newsDescription: String?
+    var newsDescription: String = " "
 
     @IBOutlet weak var label: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(newsDescription)
-        
-//        if newsDescription != nil {
-//            label.text = newsDescription
-//        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        updateNewsDescription(withText: newsDescription)
+    }
+    
+    private func updateNewsDescription(withText text: String) {
+        label.text = text
     }
 
 
