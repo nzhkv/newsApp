@@ -71,9 +71,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aI-i7-mts">
-                                <rect key="frame" x="175.66666666666666" y="428" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0p0-O9-cdw">
+                                <rect key="frame" x="30" y="149" width="333" height="23.333333333333343"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -81,18 +81,18 @@
                         <viewLayoutGuide key="safeArea" id="1Zd-Yh-Wok"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="8aI-i7-mts" firstAttribute="centerY" secondItem="1Zd-Yh-Wok" secondAttribute="centerY" id="W8K-ji-Tx3"/>
-                            <constraint firstItem="8aI-i7-mts" firstAttribute="centerX" secondItem="1Zd-Yh-Wok" secondAttribute="centerX" id="cOs-UG-smd"/>
+                            <constraint firstItem="0p0-O9-cdw" firstAttribute="top" secondItem="1Zd-Yh-Wok" secondAttribute="top" constant="90" id="Ekh-ZE-nwJ"/>
+                            <constraint firstItem="0p0-O9-cdw" firstAttribute="leading" secondItem="1Zd-Yh-Wok" secondAttribute="leading" constant="30" id="RNg-hJ-b9g"/>
+                            <constraint firstItem="1Zd-Yh-Wok" firstAttribute="trailing" secondItem="0p0-O9-cdw" secondAttribute="trailing" constant="30" id="TLr-tN-BUR"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Vas-X5-K0R"/>
                     <connections>
-                        <outlet property="label" destination="8aI-i7-mts" id="wz2-Tt-XzX"/>
+                        <outlet property="label" destination="0p0-O9-cdw" id="cHY-Yd-VPS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dyB-f2-xQu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1642" y="3"/>
+            <point key="canvasLocation" x="1641.9847328244275" y="2.8169014084507045"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hQS-T1-rjk">

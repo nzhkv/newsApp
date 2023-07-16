@@ -62,7 +62,7 @@ class MainTableViewController: UITableViewController {
         let news = news.articles[indexPath.row]
 
 
-        let detailViewController = NewsDetailViewController()
+//        let detailViewController = NewsDetailViewController()
 //        detailViewController.newsDescription = news.content
 
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
