@@ -17,33 +17,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsCell" id="qEL-Dy-WX9" customClass="NewsCell" customModule="newsApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsCell" rowHeight="90" id="qEL-Dy-WX9" customClass="NewsCell" customModule="newsApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="393" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qEL-Dy-WX9" id="reL-hX-63o">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="90"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="news" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ds-IG-yZo">
-                                            <rect key="frame" x="16" y="4" width="361" height="21"/>
+                                            <rect key="frame" x="20" y="14" width="353" height="21"/>
                                             <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sourse" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GbE-Hh-kWL">
-                                            <rect key="frame" x="16" y="23.666666666666671" width="361" height="17.333333333333329"/>
+                                            <rect key="frame" x="20" y="36" width="353" height="17.333333333333329"/>
                                             <fontDescription key="fontDescription" name="Helvetica-LightOblique" family="Helvetica" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <color key="highlightedColor" systemColor="opaqueSeparatorColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="GbE-Hh-kWL" firstAttribute="leading" secondItem="reL-hX-63o" secondAttribute="leading" constant="16" id="2rd-5f-Lrc"/>
-                                        <constraint firstItem="1ds-IG-yZo" firstAttribute="leading" secondItem="reL-hX-63o" secondAttribute="leading" constant="16" id="OPX-Aj-8zU"/>
-                                        <constraint firstItem="GbE-Hh-kWL" firstAttribute="top" secondItem="1ds-IG-yZo" secondAttribute="bottom" constant="-1.3333333333333321" id="PNf-HM-NvR"/>
-                                        <constraint firstItem="1ds-IG-yZo" firstAttribute="top" secondItem="reL-hX-63o" secondAttribute="top" constant="4" id="VuP-Gv-utR"/>
-                                        <constraint firstAttribute="trailing" secondItem="GbE-Hh-kWL" secondAttribute="trailing" constant="16" id="g2i-lg-LOx"/>
-                                        <constraint firstAttribute="trailing" secondItem="1ds-IG-yZo" secondAttribute="trailing" constant="16" id="tgl-3h-edC"/>
+                                        <constraint firstItem="GbE-Hh-kWL" firstAttribute="top" secondItem="reL-hX-63o" secondAttribute="topMargin" constant="25" id="1c1-qh-SPP"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="1ds-IG-yZo" secondAttribute="trailing" id="6Nb-aC-kwl"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="GbE-Hh-kWL" secondAttribute="trailing" id="Tp2-WR-hfZ"/>
+                                        <constraint firstItem="1ds-IG-yZo" firstAttribute="top" secondItem="reL-hX-63o" secondAttribute="topMargin" constant="3" id="dAi-y5-CE8"/>
+                                        <constraint firstItem="GbE-Hh-kWL" firstAttribute="leading" secondItem="reL-hX-63o" secondAttribute="leadingMargin" id="dfH-P3-acU"/>
+                                        <constraint firstItem="1ds-IG-yZo" firstAttribute="leading" secondItem="reL-hX-63o" secondAttribute="leadingMargin" id="uM8-N8-I7g"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
